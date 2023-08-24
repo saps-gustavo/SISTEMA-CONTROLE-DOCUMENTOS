@@ -1,0 +1,320 @@
+header, main, footer {
+    padding-left: 260px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto Slab', 'Roboto', sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.container {
+    width: 95%;
+}
+
+.card-custom-stripe {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.card-custom-stripe-title {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card-custom-stripe-icon {
+    padding-right: 7px;
+}
+
+.app-title {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.fab-imprimir {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#card-map {
+    display: none;
+}
+
+.map-config {
+    width: 100%;
+    height: 500px;
+}
+
+#user-view {
+    height: 83px;
+    padding: 1px 32px 0;
+}
+
+/*Criado para colorir a cor do texto do help-block de vermelho*/
+
+.help-alert {
+    color: red;
+}
+
+/*Início Estilos customizados para os menus ativos*/
+
+.sidenav li.active {
+    background-color: #80cbc4;
+}
+
+.sidenav .collapsible-body li.active, .sidenav.sidenav-fixed .collapsible-body li.active {
+    background-color: #b2dfdb !important;
+}
+
+.sidenav .collapsible-body li.active a, .sidenav.sidenav-fixed .collapsible-body li.active a {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.sidenav {
+    width: 260px;
+}
+
+.sidenav-trigger {
+    cursor: pointer;
+}
+/* menus com collapsible aninhados, alinha o arrow downward */
+div.collapsible-body a.collapsible-header{
+    padding-right: 16px;
+}
+/*Fim Estilos customizados para os menus ativos*/
+
+table td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.modal {
+    max-height: 90% !important;
+}
+
+.sidenav span span-menu {
+    float: left !important;
+    margin: 0 0 0 0 !important;
+}
+
+.sidenav i.dropdown {
+    /*float: left !important;*/
+    margin: 0 0 0 0 !important;
+}
+
+.sidenav i {
+    margin-right: 10px !important;
+}
+
+.funcionalidade-section {
+    margin-bottom: 45px;
+    border-left: 1px solid #bbb;
+    /*border-bottom: 1px solid #000;*/
+}
+
+/*.habilidade-negar-p [type="checkbox"]:checked+span:not(.lever):before {
+	border-top: transparent;
+	border-left: transparent;
+	border-right: 2px solid #c62828;
+	border-bottom: 2px solid #c62828;
+}
+
+.habilidade-negar-p [type="checkbox"]+span:not(.lever):before,
+.habilidade-negar-p [type="checkbox"]:not(.filled-in)+span:n
+@media only screen and (min-width: 601px)
+nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+    height: 64px;
+    line-height: 40px;
+    text-shadow: 0 0 black;
+}ot(.lever):after {
+border: 2px solid #c62828;
+}*/
+
+.habilidade-negar-p [type="checkbox"]:not(:checked), .habilidade-negar-p [type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.habilidade-negar-p [type="checkbox"]:not(:checked)+span, .habilidade-negar-p [type="checkbox"]:checked+span {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.habilidade-negar-p [type="checkbox"]:checked+span:before {
+    transition: all .2s;
+    display: none;
+}
+
+.habilidade-negar-p [type="checkbox"]:not(:checked)+span:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 21px;
+    height: 21px;
+    border: 1px solid #aaa;
+    background: #f8f8f8;
+}
+
+.habilidade-negar-p [type="checkbox"]:not(:checked)+span:after, .habilidade-negar-p [type="checkbox"]:checked+span:after {
+    font-family: 'Material Icons';
+    content: 'close';
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga" 1;
+    font-style: normal;
+    text-transform: none;
+    line-height: 22px;
+    font-size: 35px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: -6px;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #c62828;
+    /*red darken-3*/
+    transition: all .2s;
+}
+
+.habilidade-negar-p [type="checkbox"]:not(:checked)+span:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.habilidade-negar-p [type="checkbox"]:checked+span:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.habilidade-negar-p [type="checkbox"]:disabled:not(:checked)+span:before, .habilidade-negar-p [type="checkbox"]:disabled:checked+span:before {
+    &, &:hover {
+        border-color: #bbb !important;
+        background-color: #ddd;
+    }
+}
+
+.habilidade-negar-p [type="checkbox"]:disabled:checked+span:after {
+    color: #999;
+}
+
+.habilidade-negar-p [type="checkbox"]:disabled+span {
+    color: #aaa;
+}
+
+.habilidade-negar-p [type="checkbox"]:checked+span:not(.lever):before {
+    transform: none;
+}
+
+.funcionalidade-negar-p {
+    text-align: left;
+}
+
+.form-habilidade .row {
+    margin-bottom: 0px;
+}
+
+.habilidade-negada {
+    color: #c62828 !important;
+    text-decoration: line-through !important;
+}
+
+nav {
+    min-height: 40px !important;
+    height: auto !important;
+    line-height: 40px;
+}
+
+nav .nav-wrapper {
+    height: auto !important;
+}
+
+/*ajax loader (escurece a tela e mostra o gif de loading centralizado)*/
+
+#ajax-loader {
+    background: rgba(0, 0, 0, .5) url('/assets/imagens/ajax-loader.gif') no-repeat 50% 50%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2147483647;
+}
+
+.btn-small i {
+    line-height: 30px !important;
+}
+
+@media only screen and (min-width: 601px) {
+    nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+        line-height: 40px !important;
+    }
+}
+
+/*CSS background cinza sombreado*/
+
+.linha-cinza {
+    height: 12px !important;
+    border: 0 !important;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Link sem Href, muda o ponteiro do mouse */
+.link-js:hover {
+    cursor: pointer;
+}
+
+/* sobrescreve a largura do elemento div em pixels criado pelo materialize textarea  */
+.hiddendiv {
+    width: 100% !important;
+}
+
+.a {
+    color: #509a8f !important;
+}
+
+.nav-figma{
+    background-color: #1b5d54;
+}
+.loading-gif {
+    width: 70px;
+}
+
+.notificacao-off {
+    color: #D9D9D9;
+}
+
+.fundo-branco {
+    background-color: #fff !important;
+}
+
+.h6-red {
+    color: #F44336 !important
+}
+
+.h6-teal {
+    color: #509a8f !important;
+}

@@ -1,0 +1,321 @@
+body {
+    font-family: "Roboto Slab";
+    /* Background image is centered vertically and horizontally at all times */ 
+    background-position: center center; 
+    /* Background image doesn’t tile */ 
+    background-repeat: no-repeat; 
+    /* Background image is fixed in the viewport so that it doesn’t move when the content’s height is greater than the image’s height */ 
+    background-attachment: fixed; 
+    /* This is what makes the background image rescale based on the container’s size */ 
+    background-size: cover;
+}
+.card-conteudo {
+    border-radius: 80px 80px 0px 0px;
+    padding: 10px 20px;
+    margin: 0px;
+    width: 100%;
+    transition: all 0.3s ease-out;
+    background-color: #F5F5F5;
+}
+
+.card-conteudo p {
+    /*color: #a3a5ae;*/
+    font-size: 16px;
+}
+.card-conteudo h2 {
+    color: #49b8a8;
+    font-size: 26px;
+}
+/* Banner da Página Inicial e o Texto abaixo */
+.row-banner-home {
+    padding: 0px 0px 0px 50px;
+    width: 100vw;
+    height: 28vh;
+    vertical-align: middle;
+    display: table-cell;
+}
+.row-text-home {
+    padding: 20px 0px 0px 50px;
+    height: 27vh;
+}
+@media only screen and (max-width: 600px) {
+    .row-banner-home {
+        padding: 0px 0px 0px 0px;
+    }
+    .row-text-home {
+        padding: 0px 0px 0px 0px;
+        height: 17vh;
+        text-align: center;
+    }
+}
+/* Fim */
+
+/* Banner da Outras Páginas e o Texto abaixo */
+.row-banner-outras {
+    padding: 10px;
+    width: 100vw;
+    height: 15vh;
+    vertical-align: middle;
+    display: table-cell;
+}
+.row-text-outras {
+    padding: 0px 0px 0px 100px;
+    width: 100vw;
+    height: 50vh;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+@media only screen and (max-width: 600px) {
+    .row-text-outras {
+        padding: 0px 0px 0px 0px;
+        height: 30vh;
+    }
+}
+/* Fim */
+
+.img-middle{
+    vertical-align: middle;
+}
+@media only screen and (max-width: 600px) {
+    .img-middle{
+        vertical-align: middle;
+        text-align: center;
+    }
+}
+.principal {
+    border-top: 11px solid #1b5d54;
+    margin-bottom: 0px;
+    width: 100%;
+    min-height: 50vh;
+}
+.card-box {
+    border-radius: 10px 10px 10px 10px;
+    min-height: 200px;
+}
+.card-box .card-image img {
+    border-radius: 10px 10px 10px 10px;
+    min-height: 200px;
+}
+.card-box .card-title {
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(73, 184, 168, 0.7);
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.blog{
+    color: #FFFFFF;
+}
+
+.input-banner{
+    color: #509A8F !important;
+}
+
+.input-field > label{
+    font-size: 1.0em;
+}
+
+label{
+    font-size: 1.0em;
+}
+
+.input-field.col label {
+    font-size: 1.0em;
+}
+
+.input-field > label:not(.label-icon).active {
+    transform: translateY(-14px);
+}
+
+.footer{
+    z-index: 100;
+}
+
+.btn-busca {
+    color: #509A8F !important;
+}
+
+.btn-busca-borda {
+    color: #509A8F !important;
+    border-radius: 10px 10px 10px 10px;
+    border-top: 2px solid #509A8F;
+    border-left: 2px solid #509A8F;
+    border-right: 2px solid #509A8F;
+    border-bottom: 2px solid #509A8F;
+    font-family: 'Roboto Slab';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    width: 110px;
+}
+
+.btn-busca i {
+    font-size: 3rem;
+}
+
+.esconde-mobile{
+    display: block;
+}
+.exibe-mobile{
+    display: none;
+}
+
+.loading-gif {
+    width: 70px;
+}
+
+@media only screen and (max-width: 600px) {
+    .esconde-mobile{
+        display: none;
+    }
+    .exibe-mobile{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo-mobile {
+        width: 60%;
+    }
+    .center-mobile {
+        text-align: center;
+    }
+}
+
+/* Ajustes Figma */
+h1 {
+    font-size: 58px;
+    font-weight: 900 !important;
+    line-height: 76px;
+}
+h2 {
+    font-size: 48px;
+    font-weight: 900 !important;
+    line-height: 63px;
+}
+h4 {
+    font-size: 32px;
+    font-weight: 300 !important;
+    line-height: 42px;
+}
+h5 {
+    font-size: 26px;
+    font-weight: 700 !important;
+    line-height: 34px;
+}
+.h2-titulo {
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    line-height: 42px;
+}
+.titulo-card {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 29px;
+}
+.h5-marcacoes-solicitacoes {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+.h2-titulo-banner {
+    color: #FFFFFF;
+}
+.h2-branco {
+    color: #FFFFFF;
+}
+.p-sm-verde {
+    color: #1B5E54;
+}
+@media only screen and (max-width: 600px) {
+    h4{
+        font-size: 1.5em;
+    }
+    h2{
+        font-size: 2.0em;
+        text-align: center;
+    }
+    h1{
+        font-size: 2.5em;
+        text-align: center;
+        line-height: 37px;
+    }
+    .h2-titulo {
+        font-size: 24px !important;
+        font-weight: 900 !important;
+        line-height: 32px;
+    }
+    .h2-titulo-banner {
+        font-size: 36px !important;
+        font-weight: 900 !important;
+        line-height: 47px;
+        color: #FFFFFF;
+    }
+}
+
+.div-espacamento-vertical {
+    height: 10vh;
+    display: block
+}
+@media only screen and (max-width: 800px) {
+    .div-espacamento-vertical {
+        height: 0vh;
+        display: none;
+    }
+}
+
+.div-espacamento-paginacao {
+    height: 2vh;
+    display: block
+}
+
+.div-espacamento-loading {
+    height: 2vh;
+    display: block
+}
+@media only screen and (max-width: 600px) {
+    .div-espacamento-loading {
+        height: 0vh;
+        display: none;
+    }
+}
+
+.rodape {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 32px;
+    vertical-align: middle;
+}
+
+.blog {
+    padding: 0px 0px 0px 0px;
+}
+
+.tab-listagem {
+    color: #509a8f;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.material-tooltip {
+    background-color: #D9D9D9;
+    color: gray;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.modal-fila-sus {
+    border-radius: 20px 20px 20px 20px;
+}
